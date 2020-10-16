@@ -1,0 +1,18 @@
+extends ./header.jade
+block content
+    section.about
+      form(action="/register", method="post")
+        label Full Name
+          input(type="text", name="fullname")
+        label E-mail
+          input(type="email", name="email") 
+        label Favourite Topic
+          input(type="text", name="topic")
+        label Password
+          input(type="password", name="password") 
+        label Confirm Password
+          input(type="password", name="confirm-password")
+        label
+          input(type="submit", value="Register")
+    footer
+      p Made with Love by ARIB.

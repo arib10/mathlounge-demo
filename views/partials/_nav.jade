@@ -1,0 +1,21 @@
+nav
+    h1.title
+        a(href='/') ∂ MathLounge
+    ul.navlist
+        if !currentUser
+            li
+                a(href='/register') SING UP
+        li
+            a(href='/contact') CONTACT
+        li
+            a(href='/about') ABOUT
+        li
+            a(href='/profile') MY PROFILE
+    if currentUser
+        .nav-btn
+            a(href='/logout')
+                button Log out
+    else
+        .nav-btn
+            a(href='/login')
+                button LOGIN

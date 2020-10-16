@@ -1,0 +1,12 @@
+extends ./header.jade
+block content
+    section.about
+      form(action="/login", method="post")
+        label E-mail
+          input(type="text", name="email")
+        label Password
+          input(type="password", name="password")
+        label
+          input(type="submit", value="Register")
+    footer
+      p Made with Love by ARIB.
